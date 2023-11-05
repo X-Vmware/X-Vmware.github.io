@@ -24,7 +24,7 @@
 <meta property="og:description" content="QP模块生成：	1、首先在服务端的通讯配置生成qplincense.dat文件    2、生成完成之后，打开服务端目录下QPModule.exe生成易模块即可！ QP加密端不支持系列：	1、不支持有壳软件    2、不支持加密 Python、C#&#x2F;.Net程序 QP加密端成品对接后运行无登录界面：	1、不支持有壳软件    2、不支持加密 Python、C#&#x2F;.Net程序">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-13T23:14:06.000Z">
-<meta property="article:modified_time" content="2023-10-17T04:36:27.588Z">
+<meta property="article:modified_time" content="2023-11-05T21:47:43.240Z">
 <meta property="article:author" content="小曾">
 <meta property="article:tag" content="网络验证,量子网络验证,QProtect,QP,验证,网络授权,软件保护,代码虚拟化,代码加密,加密壳,虚拟机加密,加密软件,防破解">
 <meta name="twitter:card" content="summary_large_image">
@@ -281,6 +281,10 @@
 <h3 id="低版本-的云插件放到-高版本服务端-v32及以上的版本-："><a href="#低版本-的云插件放到-高版本服务端-v32及以上的版本-：" class="headerlink" title="低版本 的云插件放到 高版本服务端(v32及以上的版本)："></a>低版本 的云插件放到 高版本服务端(v32及以上的版本)：</h3><p><font size=2>	原因：新版本的服务端插件标识会变化，所以给出了以下解决方案：<br>    1、将DLL换自定义云插件标识，在源码里面换自定义云插件标识，然后编译出来<br>    1、编译出来之后，将云插件文件名改成 xxx.qp.dll 的后缀名<br>    2、将dll拷贝到新版本即可</font></p>
 <h3 id="量子成品加密出来打开卡死问题："><a href="#量子成品加密出来打开卡死问题：" class="headerlink" title="量子成品加密出来打开卡死问题："></a>量子成品加密出来打开卡死问题：</h3><p><font size=2>	1、退出电脑的”有道词典”,”百度翻译”等占用快捷键的程序(原因可能是有道词典HOOK了一些全局消息函数，导致DLL界面消息阻塞)<br>    2、如果不行，把后台全部进程都退出并且切换到纯英文输入法再次尝试<br>    3、如果再次不行请换台电脑或虚拟机进行尝试，依次排查原因</font></p>
 <h3 id="量子通用更新步骤："><a href="#量子通用更新步骤：" class="headerlink" title="量子通用更新步骤："></a>量子通用更新步骤：</h3><p><font size=2>	0、如下方法更新不会导致你的客户掉线！！！<br>    1、复制服务端目录下的 【qplincense.dat】，【ser_config.ini】，【rocksd_base_data】，【VMP授权文件】 到新版服务端目录下覆盖即可<br>    2、打开群文件”量子数据库一键更新.exe” –》选择旧版和新版数据库路径(数据库名：data.mdb) –》点击检测并增加字段 –》提示增加了字段(如果没反应说明数据库已更新过) –》再把 旧版数据库 拷贝到 新版服务端 目录下覆盖即可<br>    3、云插件更新(没有云插件忽略即可)：如果你有写好的云插件，请把云插件一并拷贝过去(注意云插件标识变动问题)，如果云插件标识变动了请用自定义云插件标识<br>    4、双击打开QPServerRelease.exe即可</font></p>
+<h3 id="提示”授权次数不足”："><a href="#提示”授权次数不足”：" class="headerlink" title="提示”授权次数不足”："></a>提示”授权次数不足”：</h3><p><font size=2>		1、由于电脑杀毒或装了一些过机器码驱动原因可能导致把程序授权自动删除，就会出现”授权次数不足”！<br>    2、解决方案如下：<br>    3、服务端–&gt;软件设置–&gt;每日请求vmp授权次数–&gt;把授权次数调节到最高即可<br>    4、服务端–&gt;卡密查找–&gt;修改卡密信息–&gt;剩余VMP授权次数–&gt;修改到只要不小于1即可<br>    5、B版同理解决</font></p>
+<h3 id="加密端出现分配内存失败："><a href="#加密端出现分配内存失败：" class="headerlink" title="加密端出现分配内存失败："></a>加密端出现分配内存失败：</h3><ul>
+<li><font size=2>加密的软件过大，请适量缩小到150M以下</font></li>
+</ul>
 
                 
               </div>
